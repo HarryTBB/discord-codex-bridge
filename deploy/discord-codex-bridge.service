@@ -1,0 +1,16 @@
+[Unit]
+Description=Discord Codex Bridge
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=REPLACE_WITH_YOUR_LINUX_USER
+WorkingDirectory=/mnt/d/codex_workspace/discord-codex-bridge
+EnvironmentFile=/mnt/d/codex_workspace/discord-codex-bridge/.env
+ExecStart=/usr/bin/env node src/server.mjs
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

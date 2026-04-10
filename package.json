@@ -1,0 +1,20 @@
+{
+  "name": "discord-codex-bridge",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Discord slash-command bridge for Codex CLI",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/server.mjs",
+    "register": "node src/register-commands.mjs",
+    "check": "node --check src/server.mjs && node --check src/register-commands.mjs && node --check src/shared.mjs"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.6.1"
+  }
+}

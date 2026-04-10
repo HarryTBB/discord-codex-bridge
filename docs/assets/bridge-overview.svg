@@ -1,0 +1,90 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Discord Codex Bridge Overview</title>
+  <desc id="desc">A visual overview of Discord Codex Bridge showing Discord users, the Discord bot, the bridge service, Codex CLI, and project-scoped workspaces.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#171F36"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#5865F2"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#020617" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1098" cy="112" r="160" fill="#1D4ED8" fill-opacity="0.12"/>
+  <circle cx="189" cy="624" r="210" fill="#7C3AED" fill-opacity="0.10"/>
+
+  <text x="90" y="110" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="44" font-weight="700">
+    Discord Codex Bridge
+  </text>
+  <text x="90" y="154" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="22">
+    Secure Discord slash commands for project-scoped Codex workflows
+  </text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="228" width="246" height="222" rx="26" fill="url(#card)" stroke="#334155" stroke-width="2"/>
+    <text x="124" y="286" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Discord Users</text>
+    <text x="124" y="326" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- slash commands</text>
+    <text x="124" y="360" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- project switching</text>
+    <text x="124" y="394" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- mobile-friendly</text>
+    <text x="144" y="424" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">output</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="380" y="228" width="246" height="222" rx="26" fill="url(#card)" stroke="#4F46E5" stroke-width="2"/>
+    <text x="420" y="286" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Discord Bot</text>
+    <text x="420" y="326" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- guild commands</text>
+    <text x="420" y="360" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- admin ACL control</text>
+    <text x="420" y="394" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- user onboarding</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="670" y="212" width="312" height="244" rx="30" fill="url(#accent)"/>
+    <rect x="684" y="226" width="284" height="216" rx="22" fill="#0F172A" fill-opacity="0.92"/>
+    <text x="720" y="286" fill="white" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Bridge Service</text>
+    <text x="720" y="322" fill="#BFDBFE" font-family="Segoe UI, Arial, sans-serif" font-size="18">discord-codex-bridge</text>
+    <text x="720" y="364" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="19">- ACL enforcement</text>
+    <text x="720" y="398" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="19">- session resume</text>
+    <text x="720" y="432" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="19">- attachment handling</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1030" y="228" width="220" height="222" rx="26" fill="url(#card)" stroke="#334155" stroke-width="2"/>
+    <text x="1064" y="286" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Codex CLI</text>
+    <text x="1064" y="326" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- exec</text>
+    <text x="1064" y="360" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- resume</text>
+    <text x="1064" y="394" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="19">- model overrides</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="300" y="506" width="760" height="146" rx="28" fill="#0F172A" stroke="#1E293B" stroke-width="2"/>
+    <text x="340" y="558" fill="#E2E8F0" font-family="Segoe UI, Arial, sans-serif" font-size="26" font-weight="700">Project-Scoped Execution</text>
+    <text x="340" y="598" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+      Users only operate inside assigned top-level projects,
+    </text>
+    <text x="340" y="628" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+      while sessions remain resumable and isolated.
+    </text>
+  </g>
+
+  <path d="M336 332H368" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M626 332H652" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+  <path d="M982 332H1012" stroke="#64748B" stroke-width="4" stroke-linecap="round"/>
+
+  <path d="M368 332L354 322V342L368 332Z" fill="#64748B"/>
+  <path d="M652 332L638 322V342L652 332Z" fill="#64748B"/>
+  <path d="M1012 332L998 322V342L1012 332Z" fill="#64748B"/>
+
+  <text x="92" y="680" fill="#64748B" font-family="Segoe UI, Arial, sans-serif" font-size="18">
+    Official Discord bot API + Codex CLI + per-project ACL
+  </text>
+</svg>
